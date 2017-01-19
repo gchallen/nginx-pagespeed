@@ -67,3 +67,7 @@ README for Modules versions
   Homepage: https://github.com/arut/nginx-rtmp-module
     rm -r debian/modules/nginx-rtmp-module/test
   Version: v1.1.11
+
+ ngx_pagespeed
+  Homepage: https://github.com/pagespeed/ngx_pagespeed
+  Version: 1.12.34.2
