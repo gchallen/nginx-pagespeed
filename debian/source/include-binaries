@@ -1,1 +1,2 @@
 debian/modules/ngx_pagespeed/psol/lib/Release/linux/x64/pagespeed_js_minify
+debian/modules/ngx_pagespeed/psol/lib/Release/linux/x64/pagespeed_automatic.a
