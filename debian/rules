@@ -82,7 +82,8 @@ light_configure_flags := \
 			--without-http_referer_module \
 			--without-http_split_clients_module \
 			--without-http_userid_module \
-			--add-dynamic-module=$(MODULESDIR)/http-echo
+			--add-dynamic-module=$(MODULESDIR)/http-echo \
+			--add-dynamic-module=$(MODULESDIR)/ngx_pagespeed
 
 full_configure_flags := \
 			$(common_configure_flags) \
@@ -102,7 +103,8 @@ full_configure_flags := \
 			--add-dynamic-module=$(MODULESDIR)/http-dav-ext \
 			--add-dynamic-module=$(MODULESDIR)/http-echo \
 			--add-dynamic-module=$(MODULESDIR)/http-upstream-fair \
-			--add-dynamic-module=$(MODULESDIR)/http-subs-filter
+			--add-dynamic-module=$(MODULESDIR)/http-subs-filter \
+			--add-dynamic-module=$(MODULESDIR)/ngx_pagespeed
 
 extras_configure_flags := \
 			$(common_configure_flags) \
