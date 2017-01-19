@@ -146,9 +146,7 @@ if [ "$psol_binary" = "unset" ] ; then
     psol_binary="\
         $mod_pagespeed_dir/pagespeed/automatic/pagespeed_automatic.a"
   else
-    if ! [ -d "$ngx_addon_dir/psol/lib/$buildtype" ]; then
-      buildtype=Release
-    fi
+		buildtype=Release
     psol_library_dir="$ngx_addon_dir/psol/lib/$buildtype/$os_name/$arch_name"
     psol_binary="$psol_library_dir/pagespeed_automatic.a"
   fi
