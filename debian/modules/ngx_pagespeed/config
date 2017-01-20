@@ -152,6 +152,7 @@ if [ "$psol_binary" = "unset" ] ; then
   fi
 fi
 
+echo "psol_binary=$psol_binary"
 echo "mod_pagespeed_dir=$mod_pagespeed_dir"
 echo "build_from_source=$build_from_source"
 
