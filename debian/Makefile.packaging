@@ -3,8 +3,8 @@ export DISPLAY=
 test: clean
 	gbp buildpackage --git-builder="debuild -us -uc"
 	lintian packages/*.deb packages/*.dsc --fail-on-warnings
-	pbuilder-dist `ls packages/*.dsc | perl -ne'/~([^~]+?)\d+\.dsc$$/ && print $$1'` build packages/*.dsc
 	pbuilder-dist `ls packages/*.dsc | perl -ne'/~([^~]+?)\d+\.dsc$$/ && print $$1'` i386 build packages/*.dsc
+	pbuilder-dist `ls packages/*.dsc | perl -ne'/~([^~]+?)\d+\.dsc$$/ && print $$1'` build packages/*.dsc
 
 sign: clean
 	gbp buildpackage --git-builder="debuild -S"
