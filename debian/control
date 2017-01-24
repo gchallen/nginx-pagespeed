@@ -71,6 +71,7 @@ Architecture: any
 Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          libnginx-mod-http-dav-ext (= ${binary:Version}),
          libnginx-mod-http-echo (= ${binary:Version}),
+         libnginx-mod-pagespeed (= ${binary:Version}),
          libnginx-mod-http-geoip (= ${binary:Version}),
          libnginx-mod-http-image-filter (= ${binary:Version}),
          libnginx-mod-http-subs-filter (= ${binary:Version}),
@@ -111,6 +112,7 @@ Description: nginx web/proxy server (standard version)
 Package: nginx-light
 Architecture: any
 Depends: libnginx-mod-http-echo (= ${binary:Version}),
+         libnginx-mod-pagespeed (= ${binary:Version}),
          nginx-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
@@ -141,6 +143,7 @@ Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          libnginx-mod-http-cache-purge (= ${binary:Version}),
          libnginx-mod-http-dav-ext (= ${binary:Version}),
          libnginx-mod-http-echo (= ${binary:Version}),
+         libnginx-mod-pagespeed (= ${binary:Version}),
          libnginx-mod-http-fancyindex (= ${binary:Version}),
          libnginx-mod-http-geoip (= ${binary:Version}),
          libnginx-mod-http-headers-more-filter (= ${binary:Version}),
@@ -393,3 +396,12 @@ Description: RTMP support for Nginx
   - Stream relay support via a push or pull model;
   - Integrated stream recording;
   - and more.
+
+Package: libnginx-mod-pagespeed
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Google PageSpeed module for Nginx
+ ngx_pagespeed speeds up your site and reduces page load time by automatically
+ applying web performance best practices to pages and associated assets (CSS,
+ JavaScript, images) without requiring you to modify your existing content or
+ workflow.

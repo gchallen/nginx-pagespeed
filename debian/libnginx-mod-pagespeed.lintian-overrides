@@ -1,0 +1,4 @@
+libnginx-mod-pagespeed: embedded-library usr/lib/nginx/modules/ngx_pagespeed.so: zlib
+libnginx-mod-pagespeed: embedded-library usr/lib/nginx/modules/ngx_pagespeed.so: libjsoncpp
+libnginx-mod-pagespeed: embedded-library usr/lib/nginx/modules/ngx_pagespeed.so: libjpeg
+libnginx-mod-pagespeed: embedded-library usr/lib/nginx/modules/ngx_pagespeed.so: libpng

@@ -25,7 +25,8 @@ DYN_MODS := \
 	mail \
 	nchan \
 	rtmp \
-	stream
+	stream \
+	pagespeed
 
 MODULESDIR = $(CURDIR)/debian/modules
 BASEDIR = $(CURDIR)

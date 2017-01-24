@@ -2,7 +2,7 @@ export DISPLAY=
 
 test: clean
 	gbp buildpackage --git-builder="debuild -us -uc"
-	lintian packages/*.deb packages/*.dsc --fail-on-warnings
+	lintian packages/*.deb packages/*.dsc --fail-on-warnings --no-tag-display-limit
 	pbuilder-dist `ls packages/*.dsc | perl -ne'/~([^~]+?)\d+\.dsc$$/ && print $$1'` build packages/*.dsc
 
 sign: clean
