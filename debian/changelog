@@ -81,14 +81,6 @@ nginx (1.13.0-1) experimental; urgency=medium
 
 nginx (1.12.0-1) experimental; urgency=medium
 
-nginx (1.11.7-1~pagepeed~trusty0) trusty; urgency=medium
-
-  * Release for trusty. Based on PageSpeed version 1.2.34.2.
-
- -- Geoffrey Challen <geoffrey.challen@gmail.com>  Wed, 18 Jan 2017 22:16:22 -0500
-
-nginx (1.11.7-1~exp1) experimental; urgency=medium
-
   [ Michael Lustfield ]
   * debian/rules:
     - Configure build flags to work with other arches and downstreams.
@@ -150,6 +142,55 @@ nginx (1.10.2-3) unstable; urgency=medium
   * mod: Upgrade development kit to 0.3.0.
 
  -- Christos Trochalakis <ctrochalakis@debian.org>  Sat, 24 Dec 2016 12:11:21 +0200
+
+nginx (1.11.7-4~trusty) trusty; urgency=medium
+
+  * Release for trusty.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Tue, 24 Jan 2017 13:21:25 -0500
+
+nginx (1.11.7-3~xenial) xenial; urgency=medium
+
+  * Bump version number.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Tue, 24 Jan 2017 13:01:55 -0500
+
+nginx (1.11.7-2~trusty3) trusty; urgency=medium
+
+  * Release for trusty.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Tue, 24 Jan 2017 12:52:28 -0500
+
+nginx (1.11.7-2~xenial2) xenial; urgency=medium
+
+  * Adding ngx_pagespeed as a module.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Tue, 24 Jan 2017 11:19:12 -0500
+
+nginx (1.11.7-2~xenial1) xenial; urgency=medium
+
+  * Release for xenial.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 19 Jan 2017 20:26:31 -0500
+
+nginx (1.11.7-2~trusty2) trusty; urgency=medium
+
+  * Fixing ia32 build.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 19 Jan 2017 19:42:14 -0500
+
+nginx (1.11.7-2~trusty1) trusty; urgency=medium
+
+  * Fixed trusty build.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 19 Jan 2017 17:54:53 -0500
+
+nginx (1.11.7-2~trusty0) trusty; urgency=medium
+
+  * Release for trusty. Based on PageSpeed version 1.2.34.2.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Wed, 18 Jan 2017 22:16:22 -0500
+
 
 nginx (1.10.2-2) unstable; urgency=medium
 
