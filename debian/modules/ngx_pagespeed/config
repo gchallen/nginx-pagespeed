@@ -146,13 +146,27 @@ if [ "$psol_binary" = "unset" ] ; then
     psol_binary="\
         $mod_pagespeed_dir/pagespeed/automatic/pagespeed_automatic.a"
   else
-		buildtype=Release
+    if ! [ -d "$ngx_addon_dir/psol/lib/$buildtype" ]; then
+      echo "
+You have set --with-debug for building nginx, but precompiled Debug binaries for
+PSOL, which ngx_pagespeed depends on, aren't available.  If you're trying to
+debug PSOL you need to build it from source.  If you just want to run nginx with
+debug-level logging you can use the Release binaries."
+      echo -n "
+Use the available Release binaries?"
+      read -p " [Y/n] " yn
+      if [[ "$yn" == N* || "$yn" == n* ]]; then
+        echo "Cancelled."
+        exit 1
+      fi
+
+      buildtype=Release
+    fi
     psol_library_dir="$ngx_addon_dir/psol/lib/$buildtype/$os_name/$arch_name"
     psol_binary="$psol_library_dir/pagespeed_automatic.a"
   fi
 fi
 
-echo "psol_binary=$psol_binary"
 echo "mod_pagespeed_dir=$mod_pagespeed_dir"
 echo "build_from_source=$build_from_source"
 

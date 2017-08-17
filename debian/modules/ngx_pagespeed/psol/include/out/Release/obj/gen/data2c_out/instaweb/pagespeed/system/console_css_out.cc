@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Automatically generated from /home/jefftk/mod_pagespeed/pagespeed/system/console.css
+// Automatically generated from /home/oschaaf/mod_pagespeed/pagespeed/system/console.css
 
 namespace net_instaweb {
 
