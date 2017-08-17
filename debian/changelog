@@ -32,6 +32,12 @@ nginx (1.13.4-1) unstable; urgency=medium
     + Switch all packages to Priority optional, extra is considered deprecated
 
  -- Christos Trochalakis <ctrochalakis@debian.org>  Tue, 29 Aug 2017 10:49:03 +0300
+nginx (1.13.3-3~trusty) trusty; urgency=medium
+
+  * Release for trusty.
+
+ -- Geoffrey Challen <geoffrey.challen@gmail.com>  Thu, 17 Aug 2017 14:15:31 -0400
+
 nginx (1.13.3-2~xenial) xenial; urgency=medium
 
   * Release for xenial.
