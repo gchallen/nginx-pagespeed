@@ -1,6 +1,6 @@
 nginx source: source-is-missing debian/modules/ngx_pagespeed/psol/lib/Release/linux/x64/pagespeed_automatic.a
 nginx source: source-is-missing debian/modules/ngx_pagespeed/psol/lib/Release/linux/ia32/pagespeed_automatic.a
-nginx source: newer-standards-version 4.0.0 (current is 3.9.7)
+nginx source: newer-standards-version 4.1.1 (current is 3.9.7)
 nginx source: missing-build-dependency-for-dh-addon systemd => dh-systemd
 nginx source: missing-build-dependency-for-dh_-command dh_systemd_enable => dh-systemd
 nginx source: package-needs-versioned-debhelper-build-depends 10
